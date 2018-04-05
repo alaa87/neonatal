@@ -19,11 +19,6 @@ import {
 } from './pipes';
 
 import {
-    EmailValidator,
-    EqualPasswordsValidator
-} from './validators';
-
-import {
     MenuService,
     ThemePreloader,
     ThemeSpinner,
@@ -37,11 +32,6 @@ const NGA_COMPONENTS = [
 const NGA_PIPES = [
     AppPicturePipe,
     SystemSVGPipe
-];
-
-const NGA_VALIDATORS = [
-    EmailValidator,
-    EqualPasswordsValidator
 ];
 
 const NGA_SERVICES = [
@@ -75,7 +65,6 @@ export class NgaModule {
         return <ModuleWithProviders>{
             ngModule: NgaModule,
             providers: [
-                ...NGA_VALIDATORS,
                 ...NGA_SERVICES,
             ],
         };

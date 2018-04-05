@@ -5,7 +5,6 @@ import { Router } from '@angular/router';
 import { User, Country } from 'assets/showcase/data/user';
 
 //Validators
-import {EmailValidator, EqualPasswordsValidator} from '../../theme/validators';
 @Component({
     selector: 'login',
     encapsulation: ViewEncapsulation.None,
