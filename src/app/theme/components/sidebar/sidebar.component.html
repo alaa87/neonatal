@@ -1,0 +1,19 @@
+<nav class="al-sidebar">
+
+
+    <div class="user-Profile">
+        <div id="user-image">
+                <img src="{{ ( '/avatar.png' | baAppPicture ) }}" />
+        </div>
+    </div>
+
+    <ul class="menu-item">
+        <li (click)='goto(menu)' [routerLink]="menu.url" *ngFor="let menu of menus" [ngClass]="{'active': menu.active == true}">
+            <a>
+                <i style="padding-right: 50px;" [ngClass]="menu.icon"></i>
+                {{menu.title}}
+            </a>
+        </li>
+
+    </ul>
+</nav>

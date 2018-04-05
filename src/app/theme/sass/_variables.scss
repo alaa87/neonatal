@@ -1,0 +1,40 @@
+$font-family: 'Open Sans';
+$font-family-title: 'Ubuntu';
+
+
+$resXXL: 1280px;
+$resXL: 1170px;
+$resL: 991px;
+$resM: 768px;
+$resS: 660px;
+$resXS: 500px;
+$resXXS: 435px;
+$resMin: 320px;
+
+$small-font-size: 12px;
+$meduim-font-size: 14px;
+$large-font-size: 18px;
+$x-large-font-size: 21px;
+$xx-large-font-size: 31px;
+
+$default: #fff;
+$clicked: #00b7f7;
+$inverse: black;
+
+$success: #8bd22f !default;
+$warning: #e7ba08 !default;
+$danger: #f95372 !default;
+
+
+$top-height: 75px;
+$background-color: #FDFDFD;
+
+$default-animation-duration: 0.2s;
+$default-animation-style: ease-out;
+
+$assets-root: '/assets';
+$images-root: $assets-root + '/images';
+$images-system: '/app/system/';
+$fonts-root: '/fonts/';
+
+$top-height-1200: 65px;

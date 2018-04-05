@@ -1,0 +1,43 @@
+<div id="login-container">
+    <div class="row">
+        <div class="logo col-center">
+            <img src="{{ ( '/logo.png' | baAppPicture ) }}" class="logo-img" />
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="offset-sm-1 col-sm-11 welcome">
+                Sign In
+            </div>
+            <div class="offset-sm-1 col-sm-11 welcome-message">
+                Want to sign up fill out this form!
+            </div>
+        </div>
+        <form>
+            <div class="row input-item">
+                <div class="col-sm-10 offset-sm-1 form-group">
+                    <label>User Name</label>
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="username">
+                </div>
+                <div class="col-sm-10 offset-sm-1 form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+                <div class="col-sm-10 offset-sm-1 form-group">
+                    <label>Select Your Facility</label>
+                    <p-dropdown [options]="facilities" placeholder="Select Your Facility" optionLabel="name" [showClear]="true"></p-dropdown>
+                </div>
+                <div class="col-sm-10 offset-sm-1 form-group" style="padding-top: 5px; padding-bottom: 5px;">
+                    <p-radioButton name="group1" value="Option 1" label="I accept the terms of use"></p-radioButton>
+                </div>
+                <div class="col-sm-5 offset-sm-1" (click)="onSubmit()">
+                    <a href="#" class="fancy-button bg-gradient1">
+                        <span>Sign In</span>
+                    </a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    
+</div>
