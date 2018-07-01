@@ -4,9 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 // import { RatingModule, ModalModule } from 'ng2-bootstrap';
 
-import { HomeComponent } from './home.component';
-import { routing } from './home.routing';
-import {DataTableModule} from 'primeng/datatable';
+import { BabyDefinitionComponent } from './baby-definition.component';
+import { routing } from './baby-definition.routing';
 
 import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} from 'primeng/primeng';
 
@@ -20,12 +19,13 @@ import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} 
         DropdownModule,
         RadioButtonModule,
         CalendarModule,
-        DataTableModule,
+        // RatingModule.forRoot(),
+        // ModalModule.forRoot(),
     ],
     declarations: [
-        HomeComponent
+        BabyDefinitionComponent
     ],
     providers: [
     ]
 })
-export class HomeModule { }
+export class BabyDefinitionModule { }

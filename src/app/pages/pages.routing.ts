@@ -13,6 +13,9 @@ export const routes: Routes = [
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', loadChildren: 'app/pages/home/home.module#HomeModule'},
+            { path: 'babyDefinition', loadChildren: 'app/pages/baby-definition/baby-definition.module#BabyDefinitionModule'},
+            { path: 'babyMatrix', loadChildren: 'app/pages/baby-matrix/baby-matrix.module#BabyMatrixModule'},
+            { path: 'indicators', loadChildren: 'app/pages/indicators/indicators.module#IndicatorsModule'},
         ]
     }
 ];

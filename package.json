@@ -5,12 +5,11 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "build": "ng build --prod --aot",
+    "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod",
-    "start": "node server.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

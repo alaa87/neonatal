@@ -4,11 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 // import { RatingModule, ModalModule } from 'ng2-bootstrap';
 
-import { HomeComponent } from './home.component';
-import { routing } from './home.routing';
+import { IndicatorsComponent } from './indicators.component';
+import { routing } from './indicators.routing';
 import {DataTableModule} from 'primeng/datatable';
-
-import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} from 'primeng/primeng';
 
 @NgModule({
     imports: [
@@ -16,16 +14,12 @@ import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} 
         FormsModule,
         NgaModule,
         routing,
-        SelectButtonModule,
-        DropdownModule,
-        RadioButtonModule,
-        CalendarModule,
         DataTableModule,
     ],
     declarations: [
-        HomeComponent
+        IndicatorsComponent
     ],
     providers: [
     ]
 })
-export class HomeModule { }
+export class IndicatorsModule { }

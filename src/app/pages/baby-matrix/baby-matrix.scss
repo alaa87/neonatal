@@ -1,0 +1,86 @@
+@import '../../theme/sass/_variables';
+
+$pink-color: #d68cc0;
+$gray-color: #6b6b6b;
+#logo-img {
+  width: 500px;
+}
+
+a{
+  cursor: pointer;
+}
+
+#logout {
+  position: absolute;
+    right: 50px;
+    text-transform: uppercase;
+    top: 0;
+    color: $pink-color;
+    font-weight: bolder;
+}
+
+#header{
+  color: #737373;
+
+  b{
+    font-size: 18px;
+  }
+  div:first-child{
+    padding-bottom: 10px;
+  }
+}
+
+.padding-container{
+  padding: 15px 50px;
+}
+
+.pink-color{
+  color: $pink-color;
+}
+
+.gray-color{
+  color: $gray-color;
+}
+
+.padding-bottom{
+  padding-bottom : 25px;
+}
+
+.without-padding{
+  padding: 0;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 0;
+  width: 90px;
+  height: 45px;
+  border-radius: 0;
+
+  &.line-padding{
+    padding: 10px 0;
+  }
+}
+
+.transparent {
+  background: transparent;
+  border: 0;
+}
+
+.dark-gray-card{
+  background-color: darkgray;
+  padding: 10px 0;
+  
+  border: 0;
+}
+
+.light-gray-card {
+  background-color: lightgray;
+  padding: 10px 0;
+  border: 0;
+}

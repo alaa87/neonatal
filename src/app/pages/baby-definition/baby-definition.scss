@@ -31,7 +31,7 @@ a{
 }
 
 .padding-container{
-  padding: 15px 50px;
+  padding: 15px 75px;
 }
 
 .pink-color{
@@ -103,7 +103,7 @@ legend {
   &:hover {
     color: #b3b3b3 !important;
     background-color: #fff !important;
-    border-color: #bc5294 !important;
+    border-color: #66afe9 !important;
     outline: none;
   }
 }
@@ -117,7 +117,7 @@ legend {
   padding: .25em  !important;
 
   .fa {
-    color: #bc5294 !important;
+    color: #66afe9 !important;
   }
 }
 
@@ -158,107 +158,5 @@ legend {
 }
 
 .ui-dropdown-panel .ui-dropdown-filter-container .fa {
-  color: #bc5294 !important;
-}
-
-.public-info {
-
-  .action-items {
-      margin-left: 100px;
-      margin-right: 100px;
-      position: absolute;
-    right: 0px;
-    top: -15px;
-  }
-
-  .action-items .dropdown-button.dropdown-toggle {
-      color: #bc5294;
-  }
-
-  .action-items-details {
-      top: -12px;
-      left: auto;
-      z-index: 9;
-      float: left;
-      min-width: 200px;
-      padding: 5px 0;
-      margin: 0px 45px;
-      list-style: none;
-      text-align: left;
-      background-color: #ffffff;
-      border: 0;
-      border-radius: 0;
-      right: 0;
-      border: 1px solid #ddd;
-      background-clip: padding-box;
-
-      &:after {
-          content: '';
-          border-color: transparent transparent transparent #ffffff;
-          border-style: solid;
-          border-width: 10px;
-          width: 0px;
-          height: 0px;
-          position: absolute;
-          top: 13px;
-          right: -20px;
-      }
-
-
-      li {
-          padding: 6px 6px;
-          border-bottom: 1px solid #e1e1e2;
-
-          &:last-child {
-              border-bottom: 0;
-          }
-
-          &:hover {
-              color: #bc5294;
-          }
-
-          a {
-              display: block;
-              padding: 3px 20px;
-              clear: both;
-              line-height: 1.42857143;
-              color: #5e5e5e;
-              white-space: nowrap;
-
-              &:hover {
-                  color: #bc5294;
-                  text-decoration: none;
-              }
-
-              i {
-                  line-height: 100%;
-                  padding: 5px;
-              }
-
-              small {
-                  padding: 0px 10px;
-              }
-          }
-      }
-  }
-
-  .action-items {
-      cursor: pointer;
-
-      button {
-          border: 0;
-          height: 20px;
-          width: 50px;
-          background: transparent;
-      }
-  }
-
-  .btn-container {
-      padding-left: 50px;
-      padding-right: 50px;
-  }
-}
-
-.ui-datatable tbody{
-  text-align: center;
+  color: #66afe9 !important;
 }

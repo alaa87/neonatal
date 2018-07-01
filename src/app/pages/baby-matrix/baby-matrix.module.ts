@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 // import { RatingModule, ModalModule } from 'ng2-bootstrap';
 
-import { HomeComponent } from './home.component';
-import { routing } from './home.routing';
+import { BabyMatrixComponent } from './baby-matrix.component';
+import { routing } from './baby-matrix.routing';
 import {DataTableModule} from 'primeng/datatable';
 
-import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} from 'primeng/primeng';
+import { DropdownModule} from 'primeng/primeng';
 
 @NgModule({
     imports: [
@@ -16,16 +16,13 @@ import { SelectButtonModule, DropdownModule, RadioButtonModule, CalendarModule} 
         FormsModule,
         NgaModule,
         routing,
-        SelectButtonModule,
         DropdownModule,
-        RadioButtonModule,
-        CalendarModule,
         DataTableModule,
     ],
     declarations: [
-        HomeComponent
+        BabyMatrixComponent
     ],
     providers: [
     ]
 })
-export class HomeModule { }
+export class BabyMatrixModule { }

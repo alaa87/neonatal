@@ -11,278 +11,40 @@
     </div>
   </div>
   <div class="row padding-container">
-    <div class="col-sm-12 pink-color">
-      <p>
-        <b>INSTRUCTIONS FOR USERS: </b>
-      </p>
+    <div class="col-sm-12 public-info">
+      <div class="pull-right action-items dropdown">
+        <a pTooltip="Actions" tooltipPosition="top" class="dropdown-button dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-th-large"></i>
+        </a>
+        <ul class="dropdown-menu action-items-details">
+          <li>
+            <a [routerLink]="['/pages/babyDefinition']">
+              <small>New Baby</small>
+              <i class="bg fa fa-desktop pull-right"></i>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/pages/babyMatrix']">
+              <small>Baby Matrix</small>
+              <i class="bg fa fa-desktop pull-right"></i>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/pages/indicators']">
+              <small>Indications</small>
+              <i class="bg fa fa-desktop pull-right"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-sm-12 pink-color">
-      <p>
-        This form must be completed for any Stillbirth (Born Dead) or Neonatal Death (live born dying within 28 days of life) that
-        occurs in your hospital or brought dead to your
-      </p>
-      <p>
-        hospital. This form must be filled only for those born!
-      </p>
-    </div>
-    <div class="col-sm-12 padding-bottom">
-      <fieldset>
-        <legend class="gray-color">Facility Details</legend>
-        <div class="col-sm-12">
-          <p>
-            <b>Mafraq- Maternity & Children Hospital</b>
-          </p>
-        </div>
-        <div class="col-sm-12 form-group">
-          <p>Place of Delivery</p>
-          <div class="col-sm-6">
-            <p-selectButton [options]="types" [(ngModel)]="selectedType"></p-selectButton>
-          </div>
-          <div class="col-sm-6">
-            <textarea class="form-control" rows="1" type="text" placeholder="Specify Here ..."></textarea>
-          </div>
-        </div>
-
-      </fieldset>
-    </div>
-    <br />
-    <div class="col-sm-12 padding-bottom">
-      <fieldset>
-        <legend class="gray-color">Patient's Details</legend>
-        <div class="col-sm-6  form-group">
-          <p>Mother's Name</p>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="First Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Second Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Middle Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Family Name" />
-          </div>
-        </div>
-        <div class="col-sm-6  form-group">
-          <p>Father's Name</p>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="First Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Second Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Middle Name" />
-          </div>
-          <div class="col-sm-3 without-padding">
-            <input class="form-control" placeholder="Family Name" />
-          </div>
-        </div>
-        <div class="col-sm-6  form-group">
-          <p>Mother's Nationality</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="countries" [style]="{'width':'100%'}" placeholder="Select a Nationality ..." filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="col-sm-6  form-group">
-          <p>Father's Nationality</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="countries" [style]="{'width':'100%'}" placeholder="Select a Nationality ..." filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Mother's National ID</p>
-          <div class="col-sm-12 without-padding">
-            <input type="text" placeholder="Mother's ID" class="form-control" />
-          </div>
-        </div>
-        <div class="col-sm-2 form-group">
-          <p>Mother's Age</p>
-          <div class="col-sm-12 without-padding">
-            <input type="text" placeholder="Mother's Age" class="form-control" />
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Father's National ID</p>
-          <div class="col-sm-12 without-padding">
-            <input type="text" placeholder="Mother's ID" class="form-control" />
-          </div>
-        </div>
-        <div class="col-sm-2 form-group">
-          <p>Father's Age</p>
-          <div class="col-sm-12 without-padding">
-            <input type="text" placeholder="Mother's Age" class="form-control" />
-          </div>
-        </div>
-        <div class="col-sm-12 without-padding line">
-          <hr />
-        </div>
-        <div class="col-sm-5  form-group">
-          <p>Mother's Educaion Level</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="educationLevels" [style]="{'width':'100%'}" placeholder="Select a Mother's Educaion Level ..."filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="col-sm-3 form-group">
-          <p>Total Monthly family Income</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" placeholder="Monthly family Income" class="form-control" />
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Mother's Occupation</p>
-          <div class="col-sm-12 without-padding">
-            <p-selectButton [options]="occupations" [(ngModel)]="selectedOccupation"></p-selectButton>
-          </div>
-        </div>
-        <div class="col-sm-12 without-padding line">
-          <hr />
-        </div>
-
-        <div class="col-sm-4 form-group">
-          <p>Religion</p>
-          <div class="col-sm-12 without-padding">
-            <p-radioButton name="religion" value="val1" label="Muslim"></p-radioButton>
-            <p-radioButton class="padding-left" name="religion" value="val2" label="christian"></p-radioButton>
-          </div>
-
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Gravity</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Gravity" />
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Number of previous Stillbirth/Abortions</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Number of previous Stillbirth" />
-          </div>
-        </div>
-        <div class="offset-sm-4 col-sm-4 form-group">
-          <p>Parity</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Parity" />
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Number of previous Neonatal Deaths</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Number of previous Neonatal Deaths" />
-          </div>
-        </div>
-      </fieldset>
-    </div>
-    <br />
-    <div class="col-sm-12 padding-bottom">
-      <fieldset>
-        <legend class="gray-color">Current Delivery</legend>
-        <div class="col-sm-4 form-group">
-          <p>Gender</p>
-          <div class="col-sm-12 without-padding">
-            <p-radioButton name="gender" value="val1" label="Male"></p-radioButton>
-            <p-radioButton name="gender" class="padding-left" value="val2" label="Female"></p-radioButton>
-            <p-radioButton name="gender" class="padding-left" value="val3" label="Ambiguous"></p-radioButton>
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Multiplicity</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="multiplicities" [style]="{'width':'100%'}" placeholder="Select Multiplicity ..."filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Gestational Age at birth (Weeks)</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Gestational Age at birth (Weeks)" />
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Date & time of Birth</p>
-          <div class="col-sm-12 without-padding">
-            <p-calendar  [showTime]="true" placeholder="Date & time of Birth"></p-calendar>
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Mode of Delivery</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="modeOfDeliveries" [style]="{'width':'100%'}" placeholder="Select Mode of Delivery ..."filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="col-sm-4 form-group">
-          <p>Birth weight (Grams)</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Birth weight (Grams)" />
-          </div>
-        </div>
-      </fieldset>
-    </div>
-    <br />
-    <div class="col-sm-12 padding-bottom">
-      <fieldset>
-        <legend class="gray-color">Baby's Status</legend>
-        <div class="col-sm-6 form-group">
-          <p>Baby's Status</p>
-          <div class="col-sm-12 without-padding">
-            <p-dropdown [options]="babyStatus" [style]="{'width':'100%'}" placeholder="Select Status ..."filter="true"></p-dropdown>
-          </div>
-        </div>
-        <div class="offset-sm-2 col-sm-4 form-group">
-          <p>Date & time of Death</p>
-          <div class="col-sm-12 without-padding">
-            <p-calendar  [showTime]="true" placeholder="Date & time of Death"></p-calendar>
-          </div>
-        </div>
-        <div class="offset-sm-8 col-sm-4 form-group">
-          <p>Age at Death</p>
-          <div class="col-sm-12 without-padding">
-            <input type="number" class="form-control" placeholder="Age at Death" />
-          </div>
-        </div>
-      </fieldset>
-    </div>
-
-    <br />
-    <div class="col-sm-12 padding-bottom">
-      <fieldset>
-        <legend class="gray-color">Cause of Death</legend>
-        <div class="col-sm-6 form-group">
-          <p>
-            <b>A.</b> Main disease or condition in fetus or infant</p>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p-dropdown [options]="questions" [style]="{'width':'100%'}" placeholder="Select ..."filter="true"></p-dropdown>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p>
-            <b>B.</b> Other disease of condition in fetus or infant</p>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p-dropdown [options]="questions" [style]="{'width':'100%'}" placeholder="Select ..."filter="true"></p-dropdown>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p>
-            <b>C.</b> Main maternal disease or condition affecting fetus or infant</p>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p-dropdown [options]="questions" [style]="{'width':'100%'}" placeholder="Select ..."filter="true"></p-dropdown>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p>
-            <b>D.</b> Other maternal disease of condition affecting fetus or infant</p>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p-dropdown [options]="questions" [style]="{'width':'100%'}" placeholder="Select ..."filter="true"></p-dropdown>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p>
-            <b>E.</b> Other reinvent circumstances</p>
-        </div>
-        <div class="col-sm-6 form-group">
-          <p-dropdown [options]="questions" [style]="{'width':'100%'}" placeholder="Select ..."filter="true"></p-dropdown>
-        </div>
-      </fieldset>
+    <div class="col-dm-12 padding-container">
+      <p-dataTable [value]="families">
+        <p-column field="MotherName" header="Mother's Name"></p-column>
+        <p-column field="MotherNationalId" header="Mother's National ID"></p-column>
+        <p-column field="FatherName" header="Father's Name"></p-column>
+        <p-column field="FatherNationalId" header="Father's National ID"></p-column>
+      </p-dataTable>
     </div>
   </div>
 </div>

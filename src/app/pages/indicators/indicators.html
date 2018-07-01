@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div id="header" class="row">
+    <div class="col-sm-12 col-center">
+      <img src="{{ ( '/logo.png' | baAppPicture ) }}" id="logo-img" />
+    </div>
+    <div class="col-sm-12 col-center">
+      <p>
+        <b>J-SANDS</b> Jordan Stillbirths & Neonatal Deaths Surveilance System Form</p>
+      <a id="logout">log out</a>
+      <hr />
+    </div>
+  </div>
+  <div class="row padding-container">
+    <div class="col-dm-12 padding-container">
+      <p-dataTable [value]="families">
+        <p-column field="MortalityIndicators" header="Mortality Indicators"></p-column>
+        <p-column field="Numerator" header="Numerator"></p-column>
+        <p-column field="Denominator" header="Denominator"></p-column>
+        <p-column field="MultiplicationFactor" header="Multiplication factor"></p-column>
+      </p-dataTable>
+    </div>
+  </div>
+</div>

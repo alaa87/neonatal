@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit  {
     constructor(private _router: Router, fb:FormBuilder) {
         if(JSON.parse(localStorage.getItem('User')))
         {
-            this._router.navigateByUrl('/pages/home/');
+            this._router.navigateByUrl('/pages/babyDefinition/');
         }
     }
 
